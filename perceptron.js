@@ -4,6 +4,8 @@ class Perceptron {
         for(let i = 0; i <this.weights.length; i++){
             this.weights[i] = Math.random(-1,1);
         }
+        // learning rate
+        this.lr = 0.1 
     }
 
     guess(inputs){
@@ -17,6 +19,17 @@ class Perceptron {
           } else {
             return -1;
           }
+    }
+
+    train(inputs, target){
+        let guess = this.guess(inputs);
+        let error = target - guess;
+
+        // tune weights
+        for(let i = 0; i< this.weights.length; i++){
+            this.weights[i] = error* inputs[i]*lr
+        }
+        
     }
 
 }

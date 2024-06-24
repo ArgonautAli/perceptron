@@ -24,7 +24,7 @@ class Points{
         } else {
             fill(0)
         }
-
     }
+
 }
 
