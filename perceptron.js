@@ -2,7 +2,7 @@ class Perceptron {
     constructor(){
         this.weights = [0,0];
         for(let i = 0; i <this.weights.length; i++){
-            this.weights[i] = random(-1,1);
+            this.weights[i] = Math.random(-1,1);
         }
     }
 
@@ -20,3 +20,10 @@ class Perceptron {
     }
 
 }
+
+const inputs = [-1,0.5]
+
+let p = new Perceptron;
+let output = p.guess(inputs)
+console.log(output)
+
