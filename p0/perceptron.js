@@ -34,9 +34,9 @@ class Perceptron {
 
 }
 
-const inputs = [-1,0.5]
+// const inputs = [-1,0.5]
 
-let p = new Perceptron;
-let output = p.guess(inputs)
-console.log(output)
+// let p = new Perceptron;
+// let output = p.guess(inputs)
+// console.log(output)
 
