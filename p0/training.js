@@ -1,25 +1,21 @@
 class Points{
-    constructor(){
-        this.x = Math.random(width)
-        this.y = Math.random(height)
-        this.label;
-        if(this.x > this.y){
-            this.label = 1;
-        } else {
-            this.label = -1
-        }
+    constructor() {
+        // Get canvas dimensions
+        this.canvasWidth = 800;
+        this.canvasHeight = 800;
+
+        // Randomize position within canvas dimensions
+        this.x = Math.random() * this.canvasWidth;
+        this.y = Math.random() * this.canvasHeight;
+
+        // Assign label based on position relative to diagonal line
+        this.label = this.x > this.y ? 1 : -1;
     }
 
-
-    show(){
+    show() {
         stroke(0);
-        if(this.label === 1){
-            fill(255);
-        } else {
-            fill(0)
-        }
+        fill(this.label === 1 ? 255 : 0);
         ellipse(this.x, this.y, 16, 16);
     }
-
 }
 
