@@ -4,7 +4,7 @@ let amount = 500;
 let trainingIndex = 0;
 
 function setup(){
-    createCanvas(600,600);
+    createCanvas(400,400);
     perc = new Perceptron;
 
     for(let i = 0; i < amount; i++){
