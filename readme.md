@@ -18,6 +18,9 @@ TODO:
 ## p1: Multilayered perceptron 
 
 ### Layers of XOR multilayer p-tron
-Input layer ---- !AND ----| 
-            |             AND---- 
-            |___ OR ------|
+             ____!AND_____| 
+    Input---|             AND---- Output
+            |___ OR_______|
+
+Diagram for layers
+
