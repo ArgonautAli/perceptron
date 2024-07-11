@@ -18,9 +18,22 @@ TODO:
 ## p1: Multilayered perceptron 
 
 ### Layers of XOR multilayer p-tron
-             ____!AND_____| 
-    Input---|             AND---- Output
-            |___ OR_______|
+       Input 1 ----o       o---- Hidden Neuron 1 ----o        o--- Output
+                   |       |                         |        |
+       Input 2 ----o       o---- Hidden Neuron 2 ----o  XOR   |
+                           |                         |  Logic |
+       Input 1 ----o       o---- Hidden Neuron 3 ----o        |
+                   |       |                         |        |
+       Input 2 ----o       o---- Hidden Neuron 4 ----o        |
 
-Diagram for layers
+Diagram for XOR NN 
+
+### Matrix multiplication 
+
+[ w11, w21   * [ x1,   =  [h1,
+  w12, w22 ]     x2 ]      h2]
+
+x1 * w11 + x2 * w21 = h1 
+x1 * w12 + x2 * w21 = h2 
+
 
